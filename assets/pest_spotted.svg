@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#84cc16" />
+      <stop offset="60%" stop-color="#4d7c0f" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <rect width="500" height="400" rx="24" fill="url(#bgGrad)"/>
+  <circle cx="250" cy="200" r="180" fill="#ca8a04" opacity="0.05" filter="blur(40px)" />
+
+  <g transform="translate(250, 200) rotate(-15)" filter="url(#shadow)">
+    <!-- Leaf Body with slightly wilted edge color -->
+    <path d="M 0,-150 
+             C 80,-80 140,-10 140,40
+             C 140,110 80,150 0,150
+             C -80,150 -140,110 -140,40
+             C -140,-10 -80,-80 0,-150 Z" 
+          fill="url(#leafGrad)"/>
+    
+    <path d="M 0,-155 L 0,180" stroke="#bef264" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+    
+    <!-- Secondary Veins -->
+    <path d="M 0,-80 Q 40,-100 80,-90" stroke="#bef264" stroke-width="2.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+    <path d="M 0,-80 Q -40,-100 -80,-90" stroke="#bef264" stroke-width="2.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+    <path d="M 0,-30 Q 50,-50 105,-35" stroke="#bef264" stroke-width="2.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+    <path d="M 0,-30 Q -50,-50 -105,-35" stroke="#bef264" stroke-width="2.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+    <path d="M 0,20 Q 60,0 120,20" stroke="#bef264" stroke-width="2.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+    <path d="M 0,20 Q -60,0 -120,20" stroke="#bef264" stroke-width="2.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+
+    <!-- Necrotic Bacterial Leaf Spots (Brown core, yellow outer halo) -->
+    <!-- Spot 1 -->
+    <circle cx="45" cy="-40" r="18" fill="#eab308" opacity="0.5" />
+    <circle cx="45" cy="-40" r="11" fill="#713f12" />
+    <circle cx="43" cy="-41" r="5" fill="#451a03" />
+
+    <!-- Spot 2 -->
+    <circle cx="-55" cy="-10" r="15" fill="#eab308" opacity="0.5" />
+    <circle cx="-55" cy="-10" r="9" fill="#713f12" />
+    <circle cx="-56" cy="-11" r="4" fill="#451a03" />
+
+    <!-- Spot 3 -->
+    <circle cx="20" cy="50" r="22" fill="#eab308" opacity="0.4" />
+    <circle cx="20" cy="50" r="14" fill="#713f12" />
+    <circle cx="18" cy="49" r="6" fill="#451a03" />
+
+    <!-- Spot 4 -->
+    <circle cx="-25" cy="100" r="16" fill="#eab308" opacity="0.5" />
+    <circle cx="-25" cy="100" r="10" fill="#713f12" />
+    <circle cx="-26" cy="99" r="5" fill="#451a03" />
+
+    <!-- Wilted/Dry Leaf Tip -->
+    <path d="M 0,-150 C 15,-130 15,-110 0,-100 C -15,-110 -15,-130 0,-150 Z" fill="#713f12" opacity="0.8"/>
+  </g>
+  
+  <text x="30" y="45" font-family="monospace" font-size="12" fill="#f87171" letter-spacing="1.5" opacity="0.8">PATHOLOGY DETECTED: SEVERE</text>
+  <text x="30" y="65" font-family="monospace" font-size="16" font-weight="bold" fill="#ffffff">BACTERIAL LEAF SPOT (SEPTORIA)</text>
+</svg>

@@ -1,0 +1,134 @@
+{
+  "farmers": [],
+  "soil_requests": [],
+  "pest_logs": [],
+  "equipment_rentals": [
+    {
+      "id": 1,
+      "owner_id": 101,
+      "owner_name": "Sukhdev Singh Sandhu",
+      "owner_contact": "9876543210",
+      "name": "Mahindra Arjun 555 DI Tractor",
+      "category": "Tractor",
+      "description": "50 HP high-performing heavy tractor, ideal for land preparation, rotavator, and deep seed bed ploughing. Maintained nicely with brand new rear tires.",
+      "cost_per_day": 1500,
+      "location": "Punjab",
+      "status": "Available",
+      "image_url": "/api/assets/rent_tractor_old.svg",
+      "created_at": "2026-06-14T09:16:17.671Z"
+    },
+    {
+      "id": 2,
+      "owner_id": 102,
+      "owner_name": "Ramesh Kumar Sharma",
+      "owner_contact": "9988776655",
+      "name": "John Deere 5050D Power Tractor",
+      "category": "Tractor",
+      "description": "Reliable dual-clutch 50 HP power tractor. Comes complete with power steering, dual speed PTO and high oil brakes. Very fuel efficient.",
+      "cost_per_day": 1800,
+      "location": "Haryana",
+      "status": "Available",
+      "image_url": "/api/assets/rent_tractor_green.svg",
+      "created_at": "2026-06-14T09:16:17.671Z"
+    },
+    {
+      "id": 3,
+      "owner_id": 103,
+      "owner_name": "Baldev Dhillon",
+      "owner_contact": "9417012345",
+      "name": "Swaraj Pro-700 Combine Harvester",
+      "category": "Harvester",
+      "description": "Heavy duty wheat and paddy crop combine harvester. Comes with skilled driver operator included. Highly efficient grain thresher minimal wastage.",
+      "cost_per_day": 4500,
+      "location": "Punjab",
+      "status": "Available",
+      "image_url": "/api/assets/rent_harvester.svg",
+      "created_at": "2026-06-14T09:16:17.671Z"
+    },
+    {
+      "id": 4,
+      "owner_id": 104,
+      "owner_name": "Manpreet Mann",
+      "owner_contact": "9888123456",
+      "name": "Kartar 4000 Premium Rice Harvester",
+      "category": "Harvester",
+      "description": "Continuous tracked harvester designed specifically for moist rice & paddy fields to avoid sinking. Extremely fast harvest turnaround.",
+      "cost_per_day": 5000,
+      "location": "Uttar Pradesh",
+      "status": "Available",
+      "image_url": "/api/assets/rent_harvester.svg",
+      "created_at": "2026-06-14T09:16:17.671Z"
+    },
+    {
+      "id": 5,
+      "owner_id": 105,
+      "owner_name": "Vijay Bhai Patel",
+      "owner_contact": "9123456789",
+      "name": "Shaktiman Rotary Tiller (Rotavator)",
+      "category": "Other",
+      "description": "7-feet dynamic rotary tiller for perfect dry/wet soil preparation. Pulverizes soil in a single run, reducing fuel consumption.",
+      "cost_per_day": 800,
+      "location": "Gujarat",
+      "status": "Available",
+      "image_url": "/api/assets/rent_tiller.svg",
+      "created_at": "2026-06-14T09:16:17.671Z"
+    },
+    {
+      "id": 6,
+      "owner_id": 106,
+      "owner_name": "Devendra Prasad Verma",
+      "owner_contact": "9812456701",
+      "name": "Pneumatic Precision Seed Sower",
+      "category": "Other",
+      "description": "Modern automatic seed drill for equal row spacing and depth. Best for sowing wheat, corn and mustard seed. Drastically improves germination.",
+      "cost_per_day": 1200,
+      "location": "Madhya Pradesh",
+      "status": "Available",
+      "image_url": "/api/assets/rent_tractor_seeder.svg",
+      "created_at": "2026-06-14T09:16:17.671Z"
+    }
+  ],
+  "community_reports": [
+    {
+      "id": 1,
+      "farmer_id": 101,
+      "farmer_name": "Sukhdev Singh Sandhu",
+      "report_type": "Pest",
+      "incident_description": "Early-stage Yellow Rust warning. Light dusting seen on wheat leaf blades along boundary fields. Farmers should monitor their soil moisture levels closely and apply propiconazole 25% EC if needed.",
+      "location": "Punjab",
+      "severity": "Medium",
+      "created_at": "2026-06-14T05:46:17.685Z"
+    },
+    {
+      "id": 2,
+      "farmer_id": 102,
+      "farmer_name": "Ramesh Kumar Sharma",
+      "report_type": "Weather",
+      "incident_description": "Severe unseasonal hailstones damaged flowering mustard and vegetable fields in Karnal subdistrict. Keep records of land geo-tag photos for disaster crop claims.",
+      "location": "Haryana",
+      "severity": "High",
+      "created_at": "2026-06-14T03:04:17.685Z"
+    },
+    {
+      "id": 3,
+      "farmer_id": 103,
+      "farmer_name": "Baldev Dhillon",
+      "report_type": "Price",
+      "incident_description": "Direct grain procurement price for fine paddy grains jumped. Private mills in Amritsar offering ₹2,380 per quintal, which is higher than MSP. High demand!",
+      "location": "Punjab",
+      "severity": "Low",
+      "created_at": "2026-06-13T21:16:17.685Z"
+    },
+    {
+      "id": 4,
+      "farmer_id": 105,
+      "farmer_name": "Vijay Bhai Patel",
+      "report_type": "Disease",
+      "incident_description": "Late Blight observed in potato crops across neighboring tracks. High relative humidity is driving infestation. Recommended to spray Mancozeb immediately.",
+      "location": "Gujarat",
+      "severity": "Medium",
+      "created_at": "2026-06-13T11:16:17.685Z"
+    }
+  ],
+  "loan_applications": []
+}

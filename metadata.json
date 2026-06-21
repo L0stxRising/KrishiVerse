@@ -1,0 +1,6 @@
+{
+  "name": "KrishiVerse",
+  "description": "A simplistic, modern agricultural platform for farmers to manage their profiles, including location, farm size, earnings, and primary crops, powered by a local SQL database.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

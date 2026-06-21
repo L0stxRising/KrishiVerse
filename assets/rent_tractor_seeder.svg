@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdba74" />
+      <stop offset="65%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#a16207" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="soilGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#451a03" />
+      <stop offset="100%" stop-color="#1c1917" />
+    </linearGradient>
+    <linearGradient id="jdGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="500" height="240" fill="url(#skyGrad)"/>
+  
+  <ellipse cx="250" cy="120" rx="150" ry="120" fill="#fef08a" opacity="0.15" filter="blur(30px)" />
+  <circle cx="80" cy="90" r="10" fill="#ffffff" opacity="0.4" filter="blur(1px)" />
+  <circle cx="100" cy="95" r="15" fill="#ffffff" opacity="0.3" filter="blur(2px)" />
+
+  <!-- Fresh brown soil fields -->
+  <rect y="235" width="500" height="165" fill="url(#soilGrad)"/>
+  
+  <!-- Soil plow rows patterns -->
+  <line x1="0" y1="260" x2="500" y2="260" stroke="#292524" stroke-width="4" stroke-dasharray="10,25"/>
+  <line x1="0" y1="290" x2="500" y2="290" stroke="#292524" stroke-width="5" stroke-dasharray="25,15"/>
+  <line x1="0" y1="320" x2="500" y2="320" stroke="#292524" stroke-width="6" stroke-dasharray="8,20"/>
+  <line x1="0" y1="355" x2="500" y2="355" stroke="#292524" stroke-width="6" stroke-dasharray="35,30"/>
+
+  <!-- TRACTOR SEEDER COMBINATION -->
+  <g transform="translate(60, 110)" filter="url(#dropshadow)">
+    <!-- Seed Sower Implement Attached at rear -->
+    <g transform="translate(20, 60)">
+      <!-- Connector -->
+      <line x1="140" y1="65" x2="160" y2="65" stroke="#475569" stroke-width="8" />
+      
+      <!-- Seeder Storage Hopper Compartments (Green-Yellow Hopper boxes) -->
+      <path d="M 15,10 L 135,10 L 125,55 L 25,55 Z" fill="#eab308" stroke="#ca8a04" stroke-width="2"/>
+      <rect x="25" y="10" width="10" height="45" fill="#ca8a04" opacity="0.5"/>
+      <rect x="65" y="10" width="10" height="45" fill="#ca8a04" opacity="0.5"/>
+      <rect x="105" y="10" width="10" height="45" fill="#ca8a04" opacity="0.5"/>
+      
+      <!-- Seed pipes and drill discs -->
+      <line x1="35" y1="55" x2="15" y2="92" stroke="#475569" stroke-width="3" />
+      <line x1="75" y1="55" x2="65" y2="92" stroke="#475569" stroke-width="3" />
+      <line x1="115" y1="55" x2="115" y2="92" stroke="#475569" stroke-width="3" />
+      
+      <!-- Metal Sower Wheels/Discs tracking path -->
+      <circle cx="15" cy="94" r="14" fill="none" stroke="#475569" stroke-width="3" />
+      <circle cx="65" cy="94" r="14" fill="none" stroke="#475569" stroke-width="3" />
+      <circle cx="115" cy="94" r="14" fill="none" stroke="#475569" stroke-width="3" />
+    </g>
+
+    <!-- FARM TRACTOR (TOWING) -->
+    <g transform="translate(190, 48)">
+      <!-- Cab and Driver Column -->
+      <path d="M 10,18 L 65,18 L 48,90 L 2,90 Z" fill="#38bdf8" opacity="0.38" stroke="#475569" stroke-width="2"/>
+      <path d="M 10,18 L 65,18 L 50,23 L 3,23 Z" fill="#15803d" />
+      <rect x="2" y="15" width="6" height="75" fill="#1e293b" />
+      <rect x="60" y="15" width="5" height="75" fill="#1e293b" />
+
+      <!-- Hood/Engine -->
+      <path d="M 65,55 L 145,55 L 145,105 L 65,105 Z" fill="url(#jdGrad)" stroke="#166534" stroke-width="2.5"/>
+      <rect x="145" y="60" width="6" height="35" fill="#1e293b" rx="2" stroke="#ca8a04" stroke-width="1.5" />
+      
+      <!-- Yellow details pattern -->
+      <line x1="70" y1="100" x2="140" y2="100" stroke="#eab308" stroke-width="3"/>
+
+      <!-- Big drive wheel rear -->
+      <circle cx="38" cy="110" r="42" fill="#1e293b" stroke="#020617" stroke-width="6"/>
+      <circle cx="38" cy="110" r="20" fill="#eab308" />
+      <circle cx="38" cy="110" r="8" fill="#475569" />
+
+      <!-- Standard wheel front -->
+      <circle cx="125" cy="122" r="26" fill="#1e293b" stroke="#020617" stroke-width="5"/>
+      <circle cx="125" cy="122" r="12" fill="#eab308" />
+      <circle cx="125" cy="122" r="5" fill="#475569" />
+    </g>
+  </g>
+
+  <!-- Labels -->
+  <text x="30" y="45" font-family="monospace" font-size="12" fill="#eab308" font-weight="bold" letter-spacing="1">MACHINERY REGISTER: RENTALS</text>
+  <text x="30" y="65" font-family="sans-serif" font-size="16" font-weight="black" fill="#ffffff">PNEUMATIC PRECISION SEED SOWER / DRILL</text>
+</svg>

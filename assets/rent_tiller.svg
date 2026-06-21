@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="60%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#451a03" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="soilGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#451a03" />
+    </linearGradient>
+    <linearGradient id="tillerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="50%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#7c2d12" />
+    </linearGradient>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="500" height="240" fill="url(#skyGrad)"/>
+  
+  <!-- Soil -->
+  <rect y="235" width="500" height="165" fill="url(#soilGrad)"/>
+  <line x1="0" y1="235" x2="500" y2="235" stroke="#f97316" stroke-width="4" stroke-dasharray="12,12" opacity="0.3"/>
+
+  <!-- Dust / Soil cloud from plowing activity behind -->
+  <path d="M 270,240 C 260,210 210,215 190,225 C 170,210 130,220 120,238 Z" fill="#b45309" opacity="0.4" filter="blur(6px)"/>
+  <path d="M 170,245 C 160,225 120,222 100,235 Z" fill="#b45309" opacity="0.35" filter="blur(8px)"/>
+
+  <!-- HEAVY DUTY ROTAVATOR / ROTARY TILLER ATTACHMENT -->
+  <g transform="translate(100, 110)" filter="url(#dropshadow)">
+    <!-- Tractor Rear Wheel (Context of Towing, partially visible on right) -->
+    <g transform="translate(190, 10)">
+      <circle cx="95" cy="115" r="95" fill="#1e293b" opacity="0.6"/>
+      <circle cx="95" cy="115" r="45" fill="#ca8a04" opacity="0.6"/>
+      <line x1="95" y1="20" x2="95" y2="210" stroke="#0f172a" stroke-width="8" opacity="0.5"/>
+      <line x1="0" y1="115" x2="190" y2="115" stroke="#0f172a" stroke-width="8" opacity="0.5"/>
+    </g>
+
+    <!-- Hydraulic 3-Point Hitch Linkage arms (Grey metal joints connecting tractor and rotavator) -->
+    <path d="M 152,145 L 210,125 L 210,135 L 152,152 Z" fill="#64748b" stroke="#475569" stroke-width="2"/>
+    <path d="M 152,175 L 225,185 L 225,195 L 152,183 Z" fill="#64748b" stroke="#475569" stroke-width="2"/>
+    <line x1="210" y1="130" x2="225" y2="190" stroke="#334155" stroke-width="4" />
+
+    <!-- Rotavator Gearbox / PTO Driveline Shaft Shield -->
+    <rect x="145" y="112" width="30" height="25" fill="#1e293b" rx="2"/>
+    <path d="M 175,120 L 225,140 L 225,152 L 175,128 Z" fill="#facc15" stroke="#ca8a04" stroke-width="1.5" /> <!-- Yellow PTO Guard -->
+
+    <!-- Rotary Tiller Top Frame Shield (Orange Heavy Curved Bonnet) -->
+    <path d="M 15,142 C 15,130 35,125 155,125 C 160,125 165,130 165,135 L 158,168 C 135,168 35,168 15,168 Z" fill="url(#tillerGrad)" stroke="#b45309" stroke-width="3"/>
+
+    <!-- Depth Adjuster Side Skids -->
+    <path d="M 10,145 L 5,230 L 18,235 L 22,170 Z" fill="#475569" stroke="#334155" stroke-width="2"/>
+    <path d="M 150,145 L 150,230 L 160,233 L 158,170 Z" fill="#475569" stroke="#334155" stroke-width="2"/>
+
+    <!-- Inside Rotating Rotor Shaft with Curved Tines (Soil tiller knives) -->
+    <g transform="translate(25, 175)">
+      <!-- Main axle rotor -->
+      <line x1="0" y1="20" x2="120" y2="20" stroke="#1e293b" stroke-width="12" stroke-linecap="round"/>
+      
+      <!-- Curved tillage blades (Tines) -->
+      <!-- Blade 1 -->
+      <path d="M 15,20 Q 5,45 -8,45 Q -18,40 -12,25 Q -8,15 15,20 Z" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <!-- Blade 2 -->
+      <path d="M 45,20 Q 35,-5 22,-5 Q 12,0 18,15 Q 22,25 45,20 Z" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <!-- Blade 3 -->
+      <path d="M 75,20 Q 65,45 52,45 Q 42,40 48,25 Q 52,15 75,20 Z" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <!-- Blade 4 -->
+      <path d="M 105,20 Q 95,-5 82,-5 Q 72,0 78,15 Q 82,25 105,20 Z" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      
+      <!-- Trailing board flap (Deflector) -->
+      <path d="M -10,-8 L -30,15 L -20,18" stroke="#ea580c" stroke-width="5" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Labels -->
+  <text x="30" y="45" font-family="monospace" font-size="12" fill="#f97316" font-weight="bold" letter-spacing="1">MACHINERY REGISTER: RENTALS</text>
+  <text x="30" y="65" font-family="sans-serif" font-size="16" font-weight="black" fill="#ffffff">SHAKTIMAN ROTARY TILLER (ROTAVATOR)</text>
+</svg>
